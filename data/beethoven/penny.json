@@ -3,10 +3,22 @@
 	"audio": "/files/beethoven_penny.ogg",
 	"info": "https://en.wikipedia.org/wiki/Rage_Over_a_Lost_Penny",
 	"pdf": "http://ks4.imslp.info/files/imglnks/usimg/9/9c/IMSLP219540-WIMA.670c-Die-Wuth_Beethoven.pdf",
-	"map": {
-		"0:00": 1,
-		"0:22": 2
-	},
+	"map": [
+		0,
+		22,
+		46,
+		80,
+		120,
+		144,
+		166,
+		183,
+		211,
+		237,
+		258,
+		278,
+		311,
+		339
+	],
 	"credits": {
 		"audio": "Publisher: Jürgen Knuth http://www.jk-klassik.de/\nLicense: CC BY-NC-SA\nPart of the Werning Ick Music collection"
 	}

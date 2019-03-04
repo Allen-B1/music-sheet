@@ -17,7 +17,7 @@ type PieceInfo struct
 	Name string `json:"name"`
 	Audio string `json:"audio"`
 	PDF string `json:"pdf"`
-	Map map[string]uint `json:"map"`
+	Map []uint `json:"map"`
 	Credits map[string]string `json:"credits"`
 }
 
@@ -139,6 +139,7 @@ func main() {
 			"[@audio]", info.Audio,
 			"[@name]", info.Name, 
 			"[@map]", string(mapraw),
+			"[@imgurl]", "/images/" + r.URL.Path[7:] + "/",
 			).Replace(string(body)) )
 
 		w.Header().Set("Content-Type", "text/html")		

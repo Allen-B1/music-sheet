@@ -1,12 +1,45 @@
+<!DOCTYPE html>
 <html>
-	<title>[@name]</title>
+	<head>
+		<title>[@name]</title>
+		<style>
+body {
+	padding: 0; margin: 0;
+}
+#audio {
+	position: fixed;
+	top:0;left:0;
+	width:100%;
+}
+#image {
+	width: 100%;
+}
+
+		</style>
+	</head>
 	<body>
 		<audio id="audio" controls>
 			<source src="[@audio]" type="audio/ogg">
 		</audio>
+		<img id="image" src="[@imgurl]1">
 		<script>
 var map = [@map];
-
+var currentPage = 1;
+document.getElementById("image").addEventListener("load", function() {
+	window.scrollTo(0, 0);	
+})
+document.getElementById("audio").addEventListener("timeupdate", function() {
+	for (var i = 0; i <= map.length; i++) {
+		// i represents first element past correct page
+		if (i == map.length || map[i] > Math.round(this.currentTime)) {
+			if (i !== currentPage) {
+				currentPage = i;
+				document.getElementById("image").src= "[@imgurl]" + (i - 1 + 1);
+			}
+			break;
+		}
+	}
+});
 		</script>
 	</body>
 </html>
