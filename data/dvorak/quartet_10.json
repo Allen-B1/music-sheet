@@ -1,10 +1,9 @@
 {
 	"name": "String Quartet No. 10",
 	"composer": "Antonin Dvorak",
-	"pdf": "http://ks.imslp.info/files/imglnks/usimg/6/63/IMSLP175902-PMLP28526-Dvorak_-_String_Quartet_FULL_SCORE.pdf",
+	"pdf": "http://ks.imslp.info/files/imglnks/usimg/0/02/IMSLP407265-PMLP06071-Dv_4tet_51_sc_ed.pdf",
 	"audio": "http://ks.imslp.info/files/imglnks/usimg/4/49/IMSLP287084-PMLP06071-dvorak_op51_borromeo.mp3",
 	"map": [
-		0,
-		1
+		0
 	]
 }
